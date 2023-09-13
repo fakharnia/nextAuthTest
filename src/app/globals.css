@@ -1,0 +1,199 @@
+:root {
+  --menu-bg      : #1D1D1F;
+  --page-bg      : #3B3B3B;
+  --background-bg: #313133;
+  --text-color   : #F2F2F2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+}
+
+* {
+  box-sizing: border-box;
+  padding   : 0;
+  margin    : 0;
+}
+
+html,
+body {
+  max-width : 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background-bg);
+}
+
+a {
+  color          : inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-Black.woff2') format('woff2'),
+    url('/fonts/Genos-Black.woff') format('woff');
+  font-weight : 900;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-BlackItalic.woff2') format('woff2'),
+    url('/fonts/Genos-BlackItalic.woff') format('woff');
+  font-weight : 900;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-Bold.woff2') format('woff2'),
+    url('/fonts/Genos-Bold.woff') format('woff');
+  font-weight : bold;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-BoldItalic.woff2') format('woff2'),
+    url('/fonts/Genos-BoldItalic.woff') format('woff');
+  font-weight : bold;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-ExtraBold.woff2') format('woff2'),
+    url('/fonts/Genos-ExtraBold.woff') format('woff');
+  font-weight : bold;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-ExtraBoldItalic.woff2') format('woff2'),
+    url('/fonts/Genos-ExtraBoldItalic.woff') format('woff');
+  font-weight : bold;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-ExtraLight.woff2') format('woff2'),
+    url('/fonts/Genos-ExtraLight.woff') format('woff');
+  font-weight : 200;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-ExtraLightItalic.woff2') format('woff2'),
+    url('/fonts/Genos-ExtraLightItalic.woff') format('woff');
+  font-weight : 200;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-Italic.woff2') format('woff2'),
+    url('/fonts/Genos-Italic.woff') format('woff');
+  font-weight : normal;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-Light.woff2') format('woff2'),
+    url('/fonts/Genos-Light.woff') format('woff');
+  font-weight : 300;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-LightItalic.woff2') format('woff2'),
+    url('/fonts/Genos-LightItalic.woff') format('woff');
+  font-weight : 300;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-Medium.woff2') format('woff2'),
+    url('/fonts/Genos-Medium.woff') format('woff');
+  font-weight : 500;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-MediumItalic.woff2') format('woff2'),
+    url('/fonts/Genos-MediumItalic.woff') format('woff');
+  font-weight : 500;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-Regular.woff2') format('woff2'),
+    url('/fonts/Genos-Regular.woff') format('woff');
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-SemiBold.woff2') format('woff2'),
+    url('/fonts/Genos-SemiBold.woff') format('woff');
+  font-weight : 600;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-SemiBoldItalic.woff2') format('woff2'),
+    url('/fonts/Genos-SemiBoldItalic.woff') format('woff');
+  font-weight : 600;
+  font-style  : italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-Thin.woff2') format('woff2'),
+    url('/fonts/Genos-Thin.woff') format('woff');
+  font-weight : 100;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Genos';
+  src        : url('/fonts/Genos-ThinItalic.woff2') format('woff2'),
+    url('/fonts/Genos-ThinItalic.woff') format('woff');
+  font-weight : 100;
+  font-style  : italic;
+  font-display: swap;
+}
